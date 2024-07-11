@@ -47,19 +47,3 @@ To start managing your tasks, use the `todo` command followed by the action you 
 
 ```bash
 todo add "Grocery List" "Buy milk"
-
-
-
-// Note
-Generate README.md
-
-
-TODO 
-CLI 
-
-
-mongodb // DB connections and operations
-
-clap // CLI parsing
-
-MongoDB Atlas
