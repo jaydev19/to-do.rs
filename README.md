@@ -1,45 +1,56 @@
 # Minor-project
 
-todo show - Shows all the list names.
-todo show -a - Shows all the list names along with the items.
-todo show -c - Shows all the completed items of all lists
-todo show -i - Shows all the incomplete items of all lists
-todo show <list_name> -c - Shows all the completed items of that list
-todo show <list_name> -i - Shows all the incompleted items of that list
-todo show <list_name> - Shows all the items of that list
+## Introduction
+Minor-project is a versatile command-line interface (CLI) application designed to help users manage their tasks efficiently. It offers a wide range of functionalities from basic task management to advanced features like cloud synchronization and sharing capabilities among users.
 
-todo add <list_name> <item> - Adds the item to that list
+## Features
 
-todo complete <list_name> <item_number> - Marks that particular item of that list as completed
-todo complete <list_name> - Marks all the items of that list as completed
-todo complete - Marks all items of all lists as completed
+### Task Management
+- **View Tasks**: List tasks with various filters.
+  - `todo show`: Shows all the list names.
+  - `todo show -a`: Shows all the list names along with the items.
+  - `todo show -c`: Shows all the completed items of all lists.
+  - `todo show -i`: Shows all the incomplete items of all lists.
+  - `todo show <list_name>`: Shows all the items of that list.
+  - `todo show <list_name> -c`: Shows all the completed items of that list.
+  - `todo show <list_name> -i`: Shows all the incomplete items of that list.
 
-todo incomplete <list_name> <item_number> - Marks that particular item of that list as incomplete
+- **Add Tasks**: Add items to your lists.
+  - `todo add <list_name> <item>`: Adds the item to that list.
 
-todo remove - removes all lists
-todo remove complete - removes all complete items from all lists
-todo remove incomplete - removes all incomplete items from all lists
-todo remove <list_name> - removes that particular list
-todo remove <list_name> -c - removes all the complete items in that particular list
-todo remove <list_name> -i - removes removes all the incomplete items in that particular list
-todo remove <list_name> <item_number> - removes that item from the list
+- **Complete/Incomplete Tasks**: Mark tasks as completed or incomplete.
+  - `todo complete <list_name> <item_number>`: Marks an item as completed.
+  - `todo incomplete <list_name> <item_number>`: Marks an item as incomplete.
 
-// Optional
-todo login - optional. Prompted for email and password. Creates new user if email is valid and doesn't exist before.
-todo logout - logs out the user if any logged in
-todo push - Sync with cloud
-todo pull - Sync with cloud
+- **Remove Tasks**: Remove tasks or lists.
+  - `todo remove`: Removes all lists.
+  - `todo remove <list_name>`: Removes that particular list.
+  - `todo remove <list_name> <item_number>`: Removes that item from the list.
 
-// Optional
-todo share list_name email - Shares the list with the user with that email so they contribute together
-todo unshare list_name email - Unshares the list with the user with that email
-todo show shared - Shows all the shared lists
-todo show shared --list <list_name> - Shows all the users with whom the list is shared
-todo show shared --email <email> - Shows all the items of that list shared with that user
-todo show notifications -u - Shows all the unread notifications of the user( this is where the todo share request comes in. If you accept then the list is shared with you)
-todo show notifications -r - Shows all the read notifications of the user
-todo show notifications - Shows all the notifications of the user
+### Optional Features
+- **User Authentication**: Manage user sessions.
+  - `todo login`: Logs in the user.
+  - `todo logout`: Logs out the user.
 
+- **Cloud Synchronization**: Keep your tasks synced across devices.
+  - `todo push`: Syncs local changes with the cloud.
+  - `todo pull`: Fetches updates from the cloud.
+
+- **Sharing and Notifications**: Collaborate on tasks and manage notifications.
+  - `todo share <list_name> <email>`: Shares the list with another user.
+  - `todo unshare <list_name> <email>`: Revokes access from a shared user.
+  - `todo show notifications`: Displays all notifications for the user.
+
+## Usage
+
+To start managing your tasks, use the `todo` command followed by the action you want to perform. For example, to add a new task, you would use:
+
+```bash
+todo add "Grocery List" "Buy milk"
+
+
+
+// Note
 Generate README.md
 
 
